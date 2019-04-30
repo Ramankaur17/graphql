@@ -4,6 +4,7 @@ import {resolvers} from './resolvers';
 const typeDefs = `
   type Query {
     name: String!
+    alias(heroName: String!): String!
   }
 `
 

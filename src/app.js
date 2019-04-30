@@ -19,5 +19,8 @@ app.listen(PORT, () => {
 //const schema = {};
 app.use('/graphql', graphqlHTTP({
   graphiql: true,
-  schema
+  schema,
+  context: {
+    userId: 1
+  }
 }));
